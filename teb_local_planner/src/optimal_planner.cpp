@@ -107,6 +107,8 @@ void TebOptimalPlanner::initialize(
   vel_goal_.second.linear.y = 0;
   vel_goal_.second.angular.z = 0;
   initialized_ = true;
+  
+  setVisualization(visual);
 }
 
 void TebOptimalPlanner::setVisualization(const TebVisualizationPtr & visualization)
